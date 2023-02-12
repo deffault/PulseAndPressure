@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppFloatingActionButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/fab_default_margin</item>
+        <item name="tint">@color/white</item>
+        <item name="backgroundTint">@color/fab_color</item>
+    </style>
+</resources>

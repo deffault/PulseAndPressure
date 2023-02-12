@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">PulseAndPressure</string>
+    <string name="add_data">Добавить запись</string>
+    <string name="slash">/</string>
+    <string name="pressure">Давление</string>
+    <string name="pulse">Пульс</string>
+    <string name="save">Сохранить</string>
+    <string name="cancel">Отмена</string>
+    <string name="value">Значение</string>
+    <string name="top_pressure">Верхнее</string>
+    <string name="bottom_pressure">Нижнее</string>
 </resources>
