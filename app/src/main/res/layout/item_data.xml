@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/content_layout">
+
+    <TextView
+        android:id="@+id/tv_date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_marginTop="@dimen/item_content_margin"
+        android:layout_marginStart="@dimen/item_content_margin"
+        android:layout_marginEnd="@dimen/item_content_margin"
+        android:background="@color/date_background"
+        android:padding="@dimen/item_content_padding"
+        tools:text="13 февраля 22:00"
+        android:textColor="@color/date_text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/item_content_margin"
+        android:padding="@dimen/item_content_padding">
+
+    <TextView
+        android:id="@+id/tv_top_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        tools:text="120"/>
+
+    <TextView
+        android:id="@+id/tv_slash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_content_margin"
+        android:text="@string/slash"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    <TextView
+        android:id="@+id/tv_bottom_pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_content_margin"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"/>
+
+    <ImageView
+        android:id="@+id/iv_pulse_icon"
+        android:layout_width="@dimen/pulse_icon_size"
+        android:layout_height="@dimen/pulse_icon_size"
+        android:layout_marginStart="@dimen/item_icon_horizontal_margin"
+        android:contentDescription="@string/pulse"
+        android:src="@drawable/baseline_favorite_24"
+        tools:text="80"
+        app:tint="@color/default_gray"/>
+
+    <TextView
+        android:id="@+id/tv_pulse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/item_content_margin"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        tools:text="50"/>
+
+    </LinearLayout>
+
+</LinearLayout>
