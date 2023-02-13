@@ -79,6 +79,7 @@ class AddDataDialogFragment : DialogFragment(R.layout.dialog_fragment_add_data) 
             )
 
             addDataViewModel.addData(data=data)
+            dismiss()
         }
     }
 
