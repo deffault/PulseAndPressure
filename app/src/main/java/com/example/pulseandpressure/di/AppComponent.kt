@@ -2,6 +2,7 @@ package com.example.pulseandpressure.di
 
 import com.example.pulseandpressure.databinding.DialogFragmentAddDataBinding
 import com.example.pulseandpressure.ui.add_data.AddDataDialogFragment
+import com.example.pulseandpressure.ui.main.MainFragment
 import dagger.Component
 import javax.inject.Singleton
 
@@ -9,4 +10,6 @@ import javax.inject.Singleton
 @Component(modules = [FirestoreModule::class, BindsModule::class])
 interface AppComponent {
     fun inject(fragment: AddDataDialogFragment)
+
+    fun inject(fragment: MainFragment)
 }

@@ -7,7 +7,7 @@ import com.example.pulseandpressure.domain.MainData
 class AddDataViewModel(
     private val repository: Repository
 ) : ViewModel() {
-    val flow = repository.flow
+    val flow = repository.addDateFlow
 
     fun addData(data: MainData) {
         repository.insert(data)

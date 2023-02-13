@@ -4,4 +4,9 @@
     <dimen name="dialog_common_padding">24dp</dimen>
     <dimen name="dialog_common_content_margin">8dp</dimen>
     <dimen name="dialog_common_content_margin_2x">16dp</dimen>
+    <dimen name="item_common_padding">16dp</dimen>
+    <dimen name="item_content_margin">8dp</dimen>
+    <dimen name="pulse_icon_size">16dp</dimen>
+    <dimen name="item_icon_horizontal_margin">24dp</dimen>
+    <dimen name="item_content_padding">8dp</dimen>
 </resources>

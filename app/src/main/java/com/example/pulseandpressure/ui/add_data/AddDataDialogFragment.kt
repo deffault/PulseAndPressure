@@ -3,9 +3,7 @@ package com.example.pulseandpressure.ui.add_data
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
@@ -21,7 +19,6 @@ import com.example.pulseandpressure.databinding.DialogFragmentAddDataBinding
 import com.example.pulseandpressure.domain.MainData
 import com.example.pulseandpressure.utils.getDate
 import com.example.pulseandpressure.utils.getTime
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -71,9 +68,9 @@ class AddDataDialogFragment : DialogFragment(R.layout.dialog_fragment_add_data) 
             val pulse = binding.edPulse.text.toString()
 
             val data = MainData(
-                topPressure = topPressure.toInt(),
-                bottomPressure = bottomPressure.toInt(),
-                pulse = pulse.toInt(),
+                topPressure = topPressure.toLong(),
+                bottomPressure = bottomPressure.toLong(),
+                pulse = pulse.toLong(),
                 time = getTime(),
                 date = getDate()
             )
