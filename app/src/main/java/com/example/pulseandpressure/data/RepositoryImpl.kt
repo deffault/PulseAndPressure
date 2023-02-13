@@ -2,6 +2,7 @@ package com.example.pulseandpressure.data
 
 import com.example.pulseandpressure.domain.MainData
 import com.google.firebase.firestore.FirebaseFirestore
+import java.util.*
 import javax.inject.Inject
 
 class RepositoryImpl @Inject constructor(
@@ -29,7 +30,8 @@ class RepositoryImpl @Inject constructor(
             "top_pressure" to data.topPressure,
             "bottom_pressure" to data.bottomPressure,
             "pulse" to data.pulse,
-            "date" to data.date
+            "date" to data.date,
+            "created_at" to Date()
         )
     }
 
